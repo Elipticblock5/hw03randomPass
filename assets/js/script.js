@@ -1,10 +1,12 @@
 // setting up variables for 4 choice input, using in class solutions as guides.
 
 
-var isNumber;
-var isSpecialChar;
-var isUpperCase;
-var isLowercase;
+var isNumber; //user choice numbers
+var isSpecialChar; //user choice special characters
+var isUpperCase; //user choice upper case
+var isLowercase; //user choice lower case
+var passLength; //input for password length
+var userChoices; // this is variable to gather up the other user input choices 
 
 // making array strings, 4 user inputs specials, numbers, lower, upper
 
@@ -13,7 +15,34 @@ number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 lower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];   
 upper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];  
       
-      
+// Need to confirm string length before password generation adding submit variable to check
+passLength = parseInt(prompt(
+    "How many characters do you want your password? Enter a number between 8 and 128"
+  ));
+  //if else for 8 to 128 value
+  if (!passLength) {
+      alert("This requires a number between 8 and 128!");
+    }
+
+    else if (enter < 8 || > 128)  {
+        enter parseInt(prompt("You must choose between 8 and 128!"))
+    };
+
+
+ // Loop 10 times
+ for (var i = 0; i < 10; i++) {
+    // Generate a random number between 1 and 10
+    // Math.floor will round down, meaning we would get a number between 0 and 9, so we'll always add 1 to bump it up.
+    var num = Math.floor(Math.random() * 10) + 1;
+
+    // Display in console
+    console.log(num);
+  }
+
+
+//prompt for length
+var passLength = confirm
+  console.log(passLength);
       
       // Here we ask the user if they want Uppercase, and store the result (true/false) in a variable.
       var isUpperCase = confirm("Do you want to include UPPERCASE letter?"); 
@@ -41,11 +70,7 @@ upper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "
         alert("you have chosen no numbers");
       }
 
-      //prompt for length
-      var passLength = confirm(
-        "How many characters do you want your password? Enter a number between 8 and 128"
-      );
-      console.log(passLength);
+      
 
       // If the above condition isn't met (isMeatEater !== true), we run the following block of code instead.
 
@@ -58,7 +83,7 @@ upper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "
         console.log(zooAnimals[i]);
       }
 
-      <!-- <script type="text/javascript">
+    
       // Loop 10 times
       for (var i = 0; i < 10; i++) {
         // Generate a random number between 1 and 10
