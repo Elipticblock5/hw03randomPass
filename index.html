@@ -10,10 +10,49 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+       
+        <script type="text/javascript">
+            // Here we ask the user if they eat meat, and store the result (true/false) in a variable.
+            var isUpperCase = confirm('Do you want to include UPPERCASE letter?');
+      
+            // If the user eats meat (isMeatEater === true) we run the following code block.
+            if (isUpperCase) {
+              alert("Here is an UPPERCASE Letter");
+            } 
+            
+            else {
+              alert("here's a lowercase letter");
+            };
+
+            var isSpecialChar = confirm("Do you want to include special characters?");
+            // prompt for choosing special character
+            if (isSpecialChar)  {
+                alert("Here is special character");
+            } 
+            
+            else {
+                alert("you don't want special characters");
+            };
+
+            //prompt for number
+            var isNumber = confirm("Do you want to include numbers?");
+            if (isNumber)  {
+                alert("here is a number");
+            } 
+            
+            else {
+                alert("you have chosen no numbers")
+            };
+
+            //prompt for length
+            var passLength = confirm("How many characters do you want your password? Enter a number between 8 and 128");
+            console.log(passLength);
+            
+
+            // If the above condition isn't met (isMeatEater !== true), we run the following block of code instead.
+            
+          </script>
         
-        <script src="" async defer></script>
+       
     </body>
 </html>
