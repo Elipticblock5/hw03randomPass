@@ -16,81 +16,10 @@ lower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "
 upper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];  
       
 // Need to confirm string length before password generation adding submit variable to check
-passLength = parseInt(prompt(
-    "How many characters do you want your password? Enter a number between 8 and 128"
-  ));
-  //if else for 8 to 128 value
-  if (!passLength) {
-      alert("This requires a number between 8 and 128!");
-    }
+//Using window alert to get length input and verify
+ window.alert("Please enter a length between 8 and 128 for your password?");
 
-    else if (enter < 8 || > 128)  {
-        enter parseInt(prompt("You must choose between 8 and 128!"))
-    };
+ 
 
 
- // Loop 10 times
- for (var i = 0; i < 10; i++) {
-    // Generate a random number between 1 and 10
-    // Math.floor will round down, meaning we would get a number between 0 and 9, so we'll always add 1 to bump it up.
-    var num = Math.floor(Math.random() * 10) + 1;
-
-    // Display in console
-    console.log(num);
-  }
-
-
-//prompt for length
-var passLength = confirm
-  console.log(passLength);
-      
-      // Here we ask the user if they want Uppercase, and store the result (true/false) in a variable.
-      var isUpperCase = confirm("Do you want to include UPPERCASE letter?"); 
-
-      // If the user eats meat (isMeatEater === true) we run the following code block.
-      if (isUpperCase) {
-        alert("Here is an UPPERCASE Letter");
-      } else {
-        alert("here's a lowercase letter");
-      }
-
-      var isSpecialChar = confirm("Do you want to include special characters?");
-      // prompt for choosing special character
-      if (isSpecialChar) {
-        alert("Here is special character");
-      } else {
-        alert("you don't want special characters");
-      }
-
-      //prompt for number
-      var isNumber = confirm("Do you want to include numbers?");
-      if (isNumber) {
-        alert("here is a number");
-      } else {
-        alert("you have chosen no numbers");
-      }
-
-      
-
-      // If the above condition isn't met (isMeatEater !== true), we run the following block of code instead.
-
-      // Array of zoo animals.
-      var zooAnimals = ["Zebra", "Rhino", "Giraffe", "Owl"];
-
-      // Loops through the array to print each zoo animal.
-      for (var i = 0; i < 4; i++) {
-        // Logs the animal at index position i to the console. This code is executed each we go through the loop.
-        console.log(zooAnimals[i]);
-      }
-
-    
-      // Loop 10 times
-      for (var i = 0; i < 10; i++) {
-        // Generate a random number between 1 and 10
-        // Math.floor will round down, meaning we would get a number between 0 and 9, so we'll always add 1 to bump it up.
-        var num = Math.floor(Math.random() * 10) + 1;
-
-        // Display in console
-        console.log(num);
-      }
     
