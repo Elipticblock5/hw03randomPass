@@ -7,7 +7,7 @@ var generateBtn = document.querySelector("#generate");
    // Create strings  for the four user inputs to be used in random generator
    // will need to loop over strings based on choices.
    var lowerCase = "abcdefghijklmnopqrstuvwxyz"
-   //var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYW"
+   var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYW"
    //var specialCase = "!@#$%^&*(){}[]<>=-_+/?~|"
    //var number = "0123456789"
 
@@ -16,6 +16,13 @@ for (let i = 0; i < lowerCase.length; i++) {
    var lowerCaseChoice = lowerCase[Math.floor(Math.random() * lowerCase.length)];
 }
 console.log(lowerCaseChoice)
+
+
+for (let i = 0; i < lowerCase.length; i++) {
+  //testing random function for one selector upperCase here
+   var upperCaseChoice = upperCase[Math.floor(Math.random() * lowerCase.length)];
+}
+console.log(upperCaseChoice)
 
 
 
