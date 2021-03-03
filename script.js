@@ -9,7 +9,7 @@ var generateBtn = document.querySelector("#generate");
    var lowerCase = "abcdefghijklmnopqrstuvwxyz"
    var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYW"
    var specialCase = "!@#$%^&*(){}[]<>=-_+/?~|"
-   //var number = "0123456789"
+   var number = "0123456789"
 
 for (let i = 0; i < lowerCase.length; i++) {
   //testing random function for one selector lowerCase here
@@ -18,17 +18,23 @@ for (let i = 0; i < lowerCase.length; i++) {
 console.log(lowerCaseChoice)
 
 
-for (let i = 0; i < lowerCase.length; i++) {
+for (let i = 0; i < upperCase.length; i++) {
   //testing random function for one selector upperCase here
-   var upperCaseChoice = upperCase[Math.floor(Math.random() * lowerCase.length)];
+   var upperCaseChoice = upperCase[Math.floor(Math.random() * upperCase.length)];
 }
 console.log(upperCaseChoice)
 
-for (let i = 0; i < lowerCase.length; i++) {
+for (let i = 0; i < specialCase.length; i++) {
   //testing random function for one selector specialCase here
-   var specialCaseChoice = specialCase[Math.floor(Math.random() * lowerCase.length)];
+   var specialCaseChoice = specialCase[Math.floor(Math.random() * specialCase.length)];
 }
 console.log(specialCaseChoice)
+
+for (let i = 0; i < number.length; i++) {
+  //testing random function for one selector number here
+   var numberCaseChoice = number[Math.floor(Math.random() * number.length)];
+}
+console.log(numberCaseChoice)
 
 
 
