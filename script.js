@@ -18,6 +18,12 @@ if (passLength >=8 && passLength <=128) {
 
   console.log(passLength);
 }
+//alert if wrong
+  else {
+    alert("Please enter a value between 8 and 128");
+          }
+
+
 //need to create variable for selections
   //var userSelections = [];
 
@@ -27,7 +33,7 @@ if (passLength >=8 && passLength <=128) {
 // need to true value inputs, starting with two to test
 //if (lowerCase == true || upperCase == true)
  
-/*if (lowerCase == true) {
+/* if (lowerCase == true) {
    userSelections += lowerCase;
  }
 
@@ -35,7 +41,7 @@ if (passLength >=8 && passLength <=128) {
    userSelections += upperCase
  }
 
- console.log(userSelections);
+ console.log(userSelections); */
 
 //Random loop strings working
 
