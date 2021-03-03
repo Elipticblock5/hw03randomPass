@@ -13,8 +13,9 @@ var generateBtn = document.querySelector("#generate");
 
 for (let i = 0; i < lowerCase.length; i++) {
   //testing random function for one selector lowerCase here
-   var lowerCase = lowerCase[Math.floor(Math.random() * lowerCase.length)];
+   var lowerCaseChoice = lowerCase[Math.floor(Math.random() * lowerCase.length)];
 }
+console.log(lowerCaseChoice)
 
 
 
