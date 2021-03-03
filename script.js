@@ -8,7 +8,7 @@ var generateBtn = document.querySelector("#generate");
    // will need to loop over strings based on choices.
    var lowerCase = "abcdefghijklmnopqrstuvwxyz"
    var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYW"
-   //var specialCase = "!@#$%^&*(){}[]<>=-_+/?~|"
+   var specialCase = "!@#$%^&*(){}[]<>=-_+/?~|"
    //var number = "0123456789"
 
 for (let i = 0; i < lowerCase.length; i++) {
@@ -23,6 +23,17 @@ for (let i = 0; i < lowerCase.length; i++) {
    var upperCaseChoice = upperCase[Math.floor(Math.random() * lowerCase.length)];
 }
 console.log(upperCaseChoice)
+
+for (let i = 0; i < lowerCase.length; i++) {
+  //testing random function for one selector specialCase here
+   var specialCaseChoice = specialCase[Math.floor(Math.random() * lowerCase.length)];
+}
+console.log(specialCaseChoice)
+
+
+
+
+
 
 
 
