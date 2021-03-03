@@ -25,15 +25,15 @@ if (passLength >=8 && passLength <=128) {
 
 
 //need to create variable for selections
-  //var userSelections = [];
+  var userSelections = [];
 
-//var lowerCaseYes = window.confirm("Click OK to confirm including lowercase characters.")
-//var upperCaseYes = window.confirm("Click OK to confirm including uppercase characters.")
+var lowerCaseYes = window.confirm("Click OK to confirm including lowercase characters.")
+var upperCaseYes = window.confirm("Click OK to confirm including uppercase characters.")
 
 // need to true value inputs, starting with two to test
-//if (lowerCase == true || upperCase == true)
+if (lowerCase == true || upperCase == true)
  
-/* if (lowerCase == true) {
+ if (lowerCase == true) {
    userSelections += lowerCase;
  }
 
@@ -41,7 +41,7 @@ if (passLength >=8 && passLength <=128) {
    userSelections += upperCase
  }
 
- console.log(userSelections); */
+ console.log(userSelections); 
 
 //Random loop strings working
 
