@@ -11,6 +11,41 @@ var generateBtn = document.querySelector("#generate");
    var specialCase = "!@#$%^&*(){}[]<>=-_+/?~|"
    var number = "0123456789"
 
+ // setting variable to remember length of password from user input.
+var passLength = prompt("How many regular and special characters would you like your password to be. Please choose between 8 and 128");
+
+if (passLength >=8 && passLength <=128) {
+
+  console.log(passLength);
+}
+//need to create variable for selections
+  //var userSelections = [];
+
+//var lowerCaseYes = window.confirm("Click OK to confirm including lowercase characters.")
+//var upperCaseYes = window.confirm("Click OK to confirm including uppercase characters.")
+
+// need to true value inputs, starting with two to test
+//if (lowerCase == true || upperCase == true)
+ 
+/*if (lowerCase == true) {
+   userSelections += lowerCase;
+ }
+
+ if (upperCase == true) {
+   userSelections += upperCase
+ }
+
+ console.log(userSelections);
+
+//Random loop strings working
+
+
+
+
+
+
+// string loops
+
 for (let i = 0; i < lowerCase.length; i++) {
   //testing random function for one selector lowerCase here
    var lowerCaseChoice = lowerCase[Math.floor(Math.random() * lowerCase.length)];
@@ -34,7 +69,7 @@ for (let i = 0; i < number.length; i++) {
   //testing random function for one selector number here
    var numberCaseChoice = number[Math.floor(Math.random() * number.length)];
 }
-console.log(numberCaseChoice)
+console.log(numberCaseChoice);
 
 
 
@@ -45,8 +80,7 @@ console.log(numberCaseChoice)
 
 
 
-       // setting variable to remember length of password from user input.
-       //var passLength = prompt("How many regular and special characters would you like your password to be. Please choose between 8 and 128");
+      
 
        // here are the 4 window prompts for options.
     //var lowerCaseYes = window.confirm("Click OK to confirm including lowercase characters.")
