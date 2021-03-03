@@ -3,38 +3,44 @@
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
-function writePassword() {
+//function writePassword() {
    // Create strings  for the four user inputs to be used in random generator
+   // will need to loop over strings based on choices.
    var lowerCase = "abcdefghijklmnopqrstuvwxyz"
-   var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYW"
-   var specialCase = "!@#$%^&*(){}[]<>=-_+/?~|"
-   var number = "0123456789"
+   //var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYW"
+   //var specialCase = "!@#$%^&*(){}[]<>=-_+/?~|"
+   //var number = "0123456789"
+
+for (let i = 0; i < lowerCase.length; i++) {
+  //testing random function for one selector lowerCase here
+   var lowerCase = lowerCase[Math.floor(Math.random() * lowerCase.length)];
+}
 
 
 
 
 
-       // lenght of passwork prompt for user
-       var passLength = prompt("How many regular and special characters would you like your password to be. Please choose between 8 and 128");
+       // setting variable to remember length of password from user input.
+       //var passLength = prompt("How many regular and special characters would you like your password to be. Please choose between 8 and 128");
 
-       // Ask if user want to include the following 4 criteria
-    var lowerCaseYes = window.confirm("Click OK to confirm including lowercase characters.")
+       // here are the 4 window prompts for options.
+    //var lowerCaseYes = window.confirm("Click OK to confirm including lowercase characters.")
 
-    var upperCaseYes = window.confirm("Click OK to confirm including uppercase characters.")
+    //var upperCaseYes = window.confirm("Click OK to confirm including uppercase characters.")
 
-    var numericYes = window.confirm("Click OK to confirm including numeric characters.")
+    //var numericYes = window.confirm("Click OK to confirm including numeric characters.")
 
-    var specialCaseYes = window.confirm("Click OK to confirm including special characters.")
-
-
+    //var specialCaseYes = window.confirm("Click OK to confirm including special characters.")
 
 
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
 
-};
+  //var password = generatePassword();
+  //var passwordText = document.querySelector("#password");
+
+  //passwordText.value = password;
+
+//};
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+//generateBtn.addEventListener("click", writePassword);
