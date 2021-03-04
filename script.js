@@ -29,21 +29,38 @@ if (passLength >=8 && passLength <=128) {
 
 var lowerCaseYes = window.confirm("Click OK to confirm including lowercase characters.")
 var upperCaseYes = window.confirm("Click OK to confirm including uppercase characters.")
+var numericYes = window.confirm("Click OK to confirm including numeric characters.")
+var specialCaseYes = window.confirm("Click OK to confirm including special characters.")
 
 // need to true value inputs, starting with two to test
-if (lowerCase == true || upperCase == true)
+if (lowerCaseYes == true || upperCaseYes == true || numericYes == true || specialCaseYes == true) {
  
- if (lowerCase == true) {
+ if (lowerCaseYes == true) {
    userSelections += lowerCase;
  }
 
- if (upperCase == true) {
-   userSelections += upperCase
+ if (upperCaseYes == true) {
+   userSelections += upperCase;
+ }
+ 
+ if (numericYes == true) {
+   userSelections += number;
  }
 
+ if (specialCaseYes == true) {
+   userSelections += specialCase;
+ }
+
+}
  console.log(userSelections); 
 
-//Random loop strings working
+
+
+
+
+
+
+ //Random loop strings working
 
 
 
