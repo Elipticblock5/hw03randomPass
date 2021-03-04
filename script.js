@@ -12,15 +12,16 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  //var passwordText = document.querySelector("#password");
 
-  //passwordText.value = password;
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+  passwordText.value = password;
 
   // alert if no userSelections
   
-  else {
+  /*else {
     alert("Please select at least one option")
-  }
+  }*/
   
 
  // setting variable to remember length of password from user input.
@@ -106,6 +107,20 @@ for (let i = 0; i < number.length; i++) {
    var numberCaseChoice = number[Math.floor(Math.random() * number.length)];
 }
 console.log(numberCaseChoice);
+
+//password Generator
+
+function generatePassword(length) {
+  var result = '';
+  var characters = userSelections;
+  var charLength = characters.length;
+  for ( var i = 0; i < length; i++ ) {
+    result += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+  console.log(result);
+  return result;
+}
+
 
 
 
