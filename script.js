@@ -2,8 +2,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
-//function writePassword() {
+
    // Create strings  for the four user inputs to be used in random generator
    // will need to loop over strings based on choices.
    var lowerCase = "abcdefghijklmnopqrstuvwxyz"
@@ -11,8 +10,23 @@ var generateBtn = document.querySelector("#generate");
    var specialCase = "!@#$%^&*(){}[]<>=-_+/?~|"
    var number = "0123456789"
 
+// Write password to the #password input
+function writePassword() {
+  //var passwordText = document.querySelector("#password");
+
+  //passwordText.value = password;
+
+  // alert if no userSelections
+  
+  else {
+    alert("Please select at least one option")
+  }
+  
+
  // setting variable to remember length of password from user input.
 var passLength = prompt("How many regular and special characters would you like your password to be. Please choose between 8 and 128");
+
+//this verifies length condition
 
 if (passLength >=8 && passLength <=128) {
 
@@ -32,7 +46,9 @@ var upperCaseYes = window.confirm("Click OK to confirm including uppercase chara
 var numericYes = window.confirm("Click OK to confirm including numeric characters.")
 var specialCaseYes = window.confirm("Click OK to confirm including special characters.")
 
-// need to true value inputs, starting with two to test
+// need to true value inputs, these are logging now
+
+
 if (lowerCaseYes == true || upperCaseYes == true || numericYes == true || specialCaseYes == true) {
  
  if (lowerCaseYes == true) {
@@ -53,9 +69,6 @@ if (lowerCaseYes == true || upperCaseYes == true || numericYes == true || specia
 
 }
  console.log(userSelections); 
-
-
-
 
 
 
@@ -105,22 +118,13 @@ console.log(numberCaseChoice);
 
       
 
-       // here are the 4 window prompts for options.
-    //var lowerCaseYes = window.confirm("Click OK to confirm including lowercase characters.")
-
-    //var upperCaseYes = window.confirm("Click OK to confirm including uppercase characters.")
-
-    //var numericYes = window.confirm("Click OK to confirm including numeric characters.")
-
-    //var specialCaseYes = window.confirm("Click OK to confirm including special characters.")
+       
 
 
 
 
-  //var password = generatePassword();
-  //var passwordText = document.querySelector("#password");
-
-  //passwordText.value = password;
+  
+  
 
 //};
 
