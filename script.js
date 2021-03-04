@@ -1,5 +1,5 @@
 // Assignment Code
-//var generateBtn = document.querySelector("#generate");
+var generateBtn = document.querySelector("#generate");
 
 // Create strings  for the four user inputs to be used in random generator
 // will need to loop over strings based on choices.
@@ -90,10 +90,10 @@ var number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var userSelections = [];
 
 // Write password to the #password input
-/* function writePassword() {
+ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-  passwordText.value = password; */
+  passwordText.value = password; 
 
 // alert if no userSelections
 
@@ -157,6 +157,8 @@ if (
 }
 console.log(userSelections);
 
+generatePassword(passLength);
+
 //Random loop strings working
 
 // string loops
@@ -186,16 +188,16 @@ for (let i = 0; i < number.length; i++) {
 }
 console.log(numberCaseChoice);
 
-// generatePassword(passLength);
+
 
 //variable set, time to generate password
 
 //password Generator
 
-/* function generatePassword(length) {
-    var result = "";
+ function generatePassword(length) {
+    var result = '';
     var characters = userSelections;
-    var charLength = characters.length;
+    var charLength = passLength.length;
     for (var i = 0; i < length; i++) {
       result += characters.charAt(
         Math.floor(Math.random() * charLength.length)
@@ -203,10 +205,10 @@ console.log(numberCaseChoice);
     }
     console.log(result);
     return result;
-  }  */
+  }  
 
-//}
+}
 
 //Add event listener to generate button
-//document.getElementById("password").value = generatePassword(length);
-//generateBtn.addEventListener("click", writePassword);
+document.getElementById("password").value = generatePassword(length);
+generateBtn.addEventListener("click", writePassword);
