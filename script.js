@@ -1,5 +1,5 @@
 // Assignment Code
-var generateBtn = document.querySelector("#generate");
+//var generateBtn = document.querySelector("#generate");
 
 
 
@@ -12,10 +12,10 @@ var specialCase = "!@#$%^&*(){}[]<>=-_+/?~|";
 var number = "0123456789";
 
 // Write password to the #password input
-function writePassword() {
+/* function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-  passwordText.value = password;
+  passwordText.value = password; */
 
   // alert if no userSelections
 
@@ -113,30 +113,32 @@ function writePassword() {
   }
   console.log(numberCaseChoice);
 
+   // generatePassword(passLength);
+
     //variable set, time to generate password
 
 
 
   //password Generator
 
-  function generatePassword(passLength) {
+  /* function generatePassword(length) {
     var result = "";
     var characters = userSelections;
     var charLength = characters.length;
     for (var i = 0; i < length; i++) {
       result += characters.charAt(
-        Math.floor(Math.random() * characters.length)
+        Math.floor(Math.random() * charLength.length)
       );
     }
     console.log(result);
     return result;
-  }
+  }  */
 
 
 
   
-}
+//}
 
 //Add event listener to generate button
-document.getElementById("password").value = generatePassword(passLength);
-generateBtn.addEventListener("click", writePassword);
+//document.getElementById("password").value = generatePassword(length);
+//generateBtn.addEventListener("click", writePassword);
