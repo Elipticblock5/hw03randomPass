@@ -87,7 +87,8 @@ var specialCase = [
 var number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
 //need to create variable for selections
-var userSelections = [];
+//var userSelections = [];
+//console.log(userSelections)
 
 // Write password to the #password input
 function writePassword() {
@@ -204,8 +205,10 @@ function writePassword() {
     console.log(result);
     return result;
   }
-};
+
 
 //Add event listener to generate button
 //document.getElementById("password").value = generatePassword(length);
-generateBtn.addEventListener("click", writePassword);
+//generateBtn.addEventListener("click", writePassword);
+
+};
