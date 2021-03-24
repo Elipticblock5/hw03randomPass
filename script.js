@@ -14,7 +14,7 @@ var numberCase = "0123456789"
 
 // Write password to the #password input
 function generatePassword() {
-  var password = "";
+  //var password = "";
   var passwordChars = "";
   
   //var password = generatePassword();
@@ -80,6 +80,7 @@ if (specialCaseYes) {
   passwordChars += specialCase
 }
 
+// logic
 for (var i = 0; i < passLength; i++) {
   password = passwordChars[Math.floor(Math.random() * passwordChars.length)]
 }
