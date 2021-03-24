@@ -80,9 +80,17 @@ if (specialCaseYes) {
   passwordChars += specialCase
 }
 
-console.log(passwordChars)
+for (var i = 0; i < passLength; i++) {
+  password = passwordChars[Math.floor(Math.random() * passwordChars.length)]
+}
 
-};
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.getElementById("password")
+  passwordText.value = password;
+}
+
+
 
   // need to true value inputs, these are logging now
 
@@ -163,6 +171,7 @@ console.log(passwordChars)
 
 //Add event listener to generate button
 //document.getElementById("password").value = generatePassword(length);
-//generateBtn.addEventListener("click", writePassword);
+}
+generateBtn.addEventListener("click", generatePassword);
 
 
